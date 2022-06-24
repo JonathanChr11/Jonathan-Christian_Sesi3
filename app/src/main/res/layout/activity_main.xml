@@ -10,30 +10,21 @@
     android:padding="40px"
     tools:context=".MainActivity">
 
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-        android:textSize="80px"
-        android:paddingBottom="50px"
-      android:text="Welcome!"
-       />
-
-    <TextView
-        android:id="@+id/tv_username"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@+id/tv_username" />
+        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/tv_email"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@+id/tv_email" />
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
         android:text="Logout" />
 
   </LinearLayout>
